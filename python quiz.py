@@ -29,18 +29,16 @@ data= data.T
 for date in data.columns:
     date_series= data[date].nsmallest(5,keep='all')
     slot_count= 0
+    data.append >=2
+    date.append ==3
     date.loc['11/27/2019'].sort_values(ascending=False)
     #pd.DataFrame.index()
     #data.sort_values(by='date')
     #data.iloc[3]
     #print(date)
     print(date_series)
-    if data.append >=2 or date.append ==3:
-        break
 
-    #if date_series ==3: 
-      #break
 
-#schedule.replace(0,'',inplace= True)
-#schedule.to_csv('final_schedule.csv')
-#print('done')
+schedule.replace(0,'',inplace= True)
+schedule.to_csv('final_schedule.csv')
+print('done')
